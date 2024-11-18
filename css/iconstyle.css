@@ -1,0 +1,135 @@
+.const_iconbox img {
+    width: 65px;
+    height: 70px;
+}
+
+.const_iconbox .gem {
+    position: absolute;
+    top: 33%;
+    left: 26%;
+    transform: translate(20%, 20%);
+}
+
+.const_iconbox .rau {
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    transform: translate(0%, -40%);
+}
+
+.const_iconbox .ari {
+    position: absolute;
+    top: 12%;
+    left: 38%;
+    transform: translate(-30%, 30%);
+}
+
+.const_iconbox .pis {
+    position: absolute;
+    top: 12%;
+    left: 49%;
+    transform: translate(-30%, -20%);
+}
+
+.const_iconbox .aqu {
+    position: absolute;
+    top: 12%;
+    right: 38%;
+    transform: translate(-40%, 30%);
+}
+
+.iconbx .cap img {
+    display: none;
+    width: 180px;
+    height: 200px;
+}
+
+.const_iconbox .can {
+    position: absolute;
+    top: 46%;
+    left: 28%;
+    transform: translate(50%, 40%);
+}
+
+.const_iconbox .sag {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(20%, 0%);
+}
+
+.const_iconbox .sco {
+    position: absolute;
+    top: 58%;
+    right: 35%;
+    transform: translate(10%, 10%);
+}
+
+.const_iconbox .lib {
+    position: absolute;
+    top: 64%;
+    left: 51%;
+    transform: translate(60%, 30%);
+}
+
+.const_iconbox .vir {
+    position: absolute;
+    top: 66%;
+    left: 46%;
+    transform: translate(-50%, 10%);
+}
+
+.const_iconbox .leo {
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    transform: translate(-40%, 30%);
+}
+
+.iconbx .cap_icon img {
+    width: 200px;
+    height: 230px;
+}
+
+.iconbx .cap {
+    position: absolute;
+    top: 5%;
+    right: 26%;
+    transform: translate(30%, 50%);
+}
+
+.iconbx .cap_icon {
+    position: absolute;
+    top: 12%;
+    right: 23%;
+    transform: translate(2%, 0%);
+}
+
+.section .code {
+    position: absolute;
+    top: 36%;
+    right: 23%;
+    transform: translate(-14%, 0%);
+
+    color: #f9f9f9;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.section .inner .serif {
+    position: absolute;
+    top: 38%;
+    right: 24%;
+    transform: translate(2%, 30%);
+
+    color: #ddd;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.intro .cicle {
+    position: absolute;
+    top: 48%;
+    left: 43%;
+    transform: translate(-30%, -65%);
+}

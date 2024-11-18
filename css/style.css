@@ -1,0 +1,422 @@
+body {
+    background: url(../img/intro.jpg)no-repeat center center/cover;
+}
+
+#header h1 {
+    position: fixed;
+    top: 80px;
+    left: 120px;
+    z-index: 999;
+}
+
+#header h1 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #979797;
+}
+
+#header .gnb {
+    position: fixed;
+    top: 50%;
+    right: 80px;
+    transform: translate(0, -50%);
+    z-index: 999;
+}
+
+#header .gnb li a {
+    position: relative;
+    display: block;
+    height: 24px;
+    font-size: 0px;
+}
+
+#header .gnb li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #333;
+
+    transition: 0.4s;
+}
+
+#header .gnb li.on a::before {
+    width: 16px;
+    background: hsl(0, 0%, 100%);
+}
+
+
+#header .gnd li.on a::before {
+    width: 40px;
+}
+
+
+
+#header .menu {
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    z-index: 999;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+
+    text-align: right;
+    margin-right: auto;
+
+}
+
+#header .menu button {
+    font-size: 0;
+
+}
+
+#header .menu button::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    right: 4px;
+
+    height: 2px;
+    background: #979797;
+}
+
+#header .menu.on button::before {
+    display: none;
+}
+
+#header .menu button::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    right: 4px;
+
+    height: 2px;
+    background: #979797;
+}
+
+#header .menu button span::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 4px;
+    right: 4px;
+
+    height: 2px;
+    background: #979797;
+}
+
+#header .menu.on button span::before {
+    transform: rotate(45deg);
+}
+
+#header .menu button span::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 4px;
+    right: 4px;
+
+    height: 2px;
+    background: #979797;
+}
+
+#header .menu.on button::after {
+    display: none;
+}
+
+#header .menu.on button span::after {
+    transform: rotate(-45deg);
+}
+
+#header .cover {
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 998;
+    background: #333;
+    color: #fff;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .cover.on {
+    display: flex;
+}
+
+#header .num {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+
+    z-index: 999;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #efefef;
+}
+
+#header .zz_bg {
+    position: fixed;
+    top: 3%;
+    right: 200px;
+
+    z-index: 999;
+
+    width: 250px;
+    height: 250px;
+
+
+    transition: 1s 0.5s;
+}
+
+
+#header .num img {
+    margin: 5px;
+}
+
+.intro .cons_tt {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translate(50%, 0%);
+}
+
+.intro .cons_gg {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(20%, 0%);
+}
+
+.intro .cons_tt img {
+    width: 90px;
+}
+
+.intro .cons_gg img {
+    width: 55px;
+}
+
+
+.intro h2 span {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.intro p {
+    color: #666;
+}
+
+.intro .txtbox strong {
+    position: absolute;
+    bottom: 20%;
+    left: 13%;
+    transform: translate(0%, -40%);
+    font-size: 18px;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+.intro .txtbox span {
+    position: absolute;
+    bottom: 17%;
+    left: 13%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.pf .inner {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+
+.pf .inner>* {
+    flex: 1;
+}
+
+.pf .desc_area {
+    flex: 1;
+}
+
+.pf .inner .fo {
+    order: -1;
+}
+
+.pf .btn {
+    display: inline-block;
+    background: #ddd;
+    color: #333;
+    padding: 8px 24px;
+}
+
+.pf .inner .img_box {
+    height: 400px;
+    overflow: hidden;
+    border: 0.5px solid #333;
+    outline: 2.5px solid #ebebeb;
+    border-radius: 16px;
+}
+
+.pf .inner .img_box img {
+    transition: 0.5s;
+}
+
+.pf .inner .img_box:hover img {
+    transform: translate(0, calc(-100% + 400px));
+    transition: 2s;
+}
+
+.pf .desc_area {
+    opacity: 0;
+    transform: translate(0, 100px);
+}
+
+.pf.on .desc_area {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s 0.7s;
+}
+
+
+
+.pf .img_area {
+    opacity: 0;
+    transform: translate(0, -1000px);
+}
+
+.pf.on .img_area {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s 1.2s;
+}
+
+.pf .desc_area .tit {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+
+.PF01 .desc_area .tit .label {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    background: #666;
+    padding: 4px 32px 4px 8px;
+    color: #efefef;
+    font-size: 14px;
+
+    clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+}
+
+.PF02 .desc_area .tit .label {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    background: #666;
+    padding: 4px 32px 4px 8px;
+    color: #efefef;
+    font-size: 14px;
+
+    clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+}
+
+.PF03 .desc_area .tit .label {
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    background: #666;
+    padding: 4px 32px 4px 8px;
+    color: #efefef;
+    font-size: 14px;
+
+    clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+}
+
+.section {
+    background: url(../img/djj.png) no-repeat fixed left bottom;
+}
+
+
+
+.pf .desc_area .tit h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f9f9f9;
+}
+
+.pf .desc_area .tit p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ddd;
+    margin-top: 8px;
+}
+
+.pf .desc_area .desc {
+    margin-bottom: 24px;
+}
+
+.pf .desc_area .desc table th {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ddd;
+    height: 24px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.pf .desc_area .desc table td {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ddd;
+    height: 24px;
+}
+
+.pf .desc_area .desc .color span {
+    color: transparent;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #333;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.pf .icon_box {
+    position: absolute;
+}
+
+.pf .zzicon {
+    width: 450px;
+}
+
+.pf .zzicon {
+    position: absolute;
+    top: -3%;
+    right: 10%;
+}
+
+.icon {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.pf .zzimgbx {
+    width: 1920px;
+    height: 100px;
+    position: absolute;
+}
